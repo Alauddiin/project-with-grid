@@ -1,0 +1,294 @@
+/* --------------------global css--------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&display=swap");
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "Baloo Chettan 2", cursive;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.6rem;
+  transition: 0.5s;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding: 5rem;
+}
+
+.section-title h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.section-title p {
+  font-size: 1.8rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+/*--------------------------Header CSS----------------------*/
+.header-area {
+  padding: 4rem 0;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.header-content {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+}
+.header-content .logo{
+  text-align: left;
+}
+.header-content .logo a {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header-content ul {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: end;
+  align-items: center;
+}
+.header-content ul li a {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  margin-left: 2.5rem;
+}
+.header-content ul li a:hover {
+  color: tomato;
+}
+
+/*--------------------------Banner CSS----------------------*/
+.banner-area {
+  padding: 4rem 0;
+  width: 100%;
+}
+.banner-area img {
+  border: 2px solid #ddd;
+  padding: 3px;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+/*--------------------------About CSS----------------------*/
+.about-area {
+  padding: 4rem 0;
+  background-color: #f3f3f3;
+  text-align: center;
+  width: 100%;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.single-about {
+  border: 2px solid rgb(11, 133, 133);
+  padding: 3rem 2rem;
+  border-radius: 5px;
+  background-color: rgb(18, 119, 5);
+  color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: 2px 3px 10px #1b1a1a;
+}
+.single-about i {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  font-size: 3rem;
+  background-color: rgb(224, 25, 250);
+  padding: 8px;
+  line-height: 4rem;
+  color: #fff;
+}
+
+.single-about h3 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: 500;
+}
+
+/*--------------------------Services CSS----------------------*/
+.services-area {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: rgb(202, 198, 198);
+  width: 100%;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 2rem;
+}
+.single-service {
+  border: 2px solid rgb(8, 6, 6);
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: 2px 3px 5px #1b1a1a;
+}
+.single-service h3 {
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  background-color: rgb(175, 6, 190);
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.single-service p {
+  text-align: justify;
+  padding: 1.5rem 0;
+}
+.single-service a {
+  background-color: rgb(60, 199, 5);
+  padding: 8px 20px;
+  text-align: left;
+  display: block;
+  color: #fff;
+  width: 8rem;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+.single-service a:hover {
+  background-color: #333;
+}
+/*--------------------------Gallery CSS----------------------*/
+.gallery-area {
+  padding: 4rem 0;
+  background-color: #ddd;
+  width: 100%;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+.single-gallery img {
+  border: 2px solid #fff;
+  padding: 3px;
+  border-radius: 1rem;
+  width: 100%;
+}
+/*--------------------------Contact CSS----------------------*/
+.contact-area {
+  padding: 4rem 0;
+  background-color: rgb(202, 198, 198);
+  width: 100%;
+}
+.contact {
+  display: grid;
+  grid-template-columns: 58% 40%;
+  grid-gap: 2rem;
+  padding: 0 4rem;
+}
+
+.single-contact form input,
+textarea {
+  width: 100%;
+  padding: 1rem 0 1rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+.single-contact form input[type="submit"] {
+  width: auto;
+  background-color: rgb(60, 199, 5);
+  padding: 0.8rem 4rem;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+}
+.single-contact form input[type="submit"]:hover {
+  background-color: #333;
+  transition: 0.5s;
+}
+.single-contact-address {
+  padding-top: 3rem;
+}
+
+.single-address {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.single-address i {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  font-size: 3rem;
+  background-color: rgb(224, 25, 250);
+  padding: 8px;
+  line-height: 4rem;
+  color: #fff;
+  text-align: center;
+  margin-right: 1.5rem;
+}
+.single-address h4 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+}
+.single-address span {
+  display: block;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+/*--------------------------Footer CSS----------------------*/
+.footer-area {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  width: 100%;
+}
